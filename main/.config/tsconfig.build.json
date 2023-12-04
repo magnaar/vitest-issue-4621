@@ -1,0 +1,16 @@
+{
+    "extends": [
+        "./tsconfig.json"
+        , "../../.config/tsconfig.build.json"
+    ],
+    "exclude": [
+        "../.config"
+        , "../**/__tests__/**/*"
+        , "../e2e"
+        , "**/*.spec.ts"
+        , "**/*.test.ts"
+    ],
+    "references": [
+        { "path": "../../shared/.config/tsconfig.build.json" }
+    ]
+}

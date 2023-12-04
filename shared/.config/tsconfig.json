@@ -1,0 +1,16 @@
+{
+    "extends": [
+        "../../.config/tsconfig.json"
+    ],
+    "include": ["../src/**/*"],
+    "ts-node": {
+        "swc": true,
+        "transpileOnly": true
+    },
+    "compilerOptions": {
+        "baseUrl": "..",
+        "paths": {
+            "src/*": ["src/*"]
+        }
+    }
+}

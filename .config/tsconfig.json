@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
+        "declaration": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "forceConsistentCasingInFileNames": true,
+        "incremental": true,
+        "module": "commonjs",
+        "noFallthroughCasesInSwitch": false,
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "removeComments": true,
+        "skipLibCheck": true,
+        "sourceMap": true,
+        "sourceRoot": "../src",
+        "strictBindCallApply": false,
+        "strictNullChecks": false,
+        "target": "es2021"
+    }
+}

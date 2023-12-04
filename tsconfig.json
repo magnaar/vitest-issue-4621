@@ -1,0 +1,29 @@
+{
+    // tsconfig only for vscode
+    // to allow to intellisense to find path aliases
+    // It serves no purpose for building the app
+    "extends": ["./.config/tsconfig.json"],
+    "include": [
+        "front/env.d.ts",
+        "**/src/**/*.ts",
+        "**/src/**/*.vue"
+    ],
+    "compilerOptions": {
+        "module": "es2022",
+        "moduleResolution": "Node",
+        "baseUrl": "./",
+        "paths": {
+            "shared/tests": ["shared/_tests/index.ts"],
+            "shared/tests/*": ["shared/_tests/*"],
+            "shared/*": ["shared/dist/*"],
+            "src/*": [
+                "main/src/*",
+                "shared/src/*"
+            ],
+            "tests/*": [
+                "main/_tests/*",
+                "shared/_tests/*"
+            ]
+        }
+    }
+}
