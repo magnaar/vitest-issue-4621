@@ -1,0 +1,1 @@
+# vitest-issue-4621
